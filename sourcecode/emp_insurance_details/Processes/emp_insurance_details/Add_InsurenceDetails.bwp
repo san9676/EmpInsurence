@@ -17,7 +17,9 @@
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tib="http://www.tibco.com/bw/xslt/custom-functions"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
-    xmlns:tibprop="http://ns.tibco.com/bw/property" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    xmlns:tibprop="http://ns.tibco.com/bw/property"
+    xmlns:tns="http://tns.tibco.com/bw/REST"
+    xmlns:tns0="http://www.EniqueSol.org/Emp_InsurenceDetails/V1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"
@@ -1412,6 +1414,9 @@
             namespace="http://www.tibco.com/namespaces/tnt/plugins/jdbc+af94a803-e710-4a52-93d9-d5a7fa4a010b+input" prefix="tns5"/>
     </tibex:NamespaceRegistry>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.eniquesolution.com/E-Commerce/CommonFramework"/>
+    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/REST"/>
+    <bpws:import importType="http://www.w3.org/2001/XMLSchema"
+        location="../../../CommonInterface/Schemas/Emp_InsurenceDetails.xsd" namespace="http://www.EniqueSol.org/Emp_InsurenceDetails/V1"/>
     <bpws:partnerLinks>
         <bpws:partnerLink myRole="use" name="addInsurence"
             partnerLinkType="ns0:partnerLinkType"

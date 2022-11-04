@@ -228,13 +228,13 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//CommonInterface///Connections/HTTP/Port</name>
-			<value>100123</value>
+			<value>10012</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>100123</lookupValue>
+			<lookupValue>10012</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//CommonInterface//BW.MODULE.NAME</name>

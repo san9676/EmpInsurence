@@ -5,7 +5,7 @@
     "title" : "Insurence",
     "description" : "Insurence service"
   },
-  "host" : "",
+  "host" : "localhost:8080",
   "basePath" : "/",
   "schemes" : [ "http" ],
   "paths" : {

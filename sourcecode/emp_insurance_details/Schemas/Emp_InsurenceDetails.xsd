@@ -11,7 +11,7 @@
     		<element name="PolicyNumber" type="string"></element>
     		<element name="PolicyType" type="string"></element>
     		<element name="SumInsured" type="string"></element>
-    		<element name="ValidTill" type="string"></element>
+    		<element name="ValidTill" type="date"></element>
     	</sequence>
     </complexType>
     

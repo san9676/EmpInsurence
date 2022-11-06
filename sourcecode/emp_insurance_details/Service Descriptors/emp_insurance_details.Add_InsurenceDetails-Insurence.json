@@ -5,7 +5,7 @@
     "title" : "Insurence",
     "description" : "Insurence service"
   },
-  "host" : "localhost:8080",
+  "host" : "",
   "basePath" : "/",
   "schemes" : [ "http" ],
   "paths" : {
@@ -60,7 +60,8 @@
           "type" : "string"
         },
         "ValidTill" : {
-          "type" : "string"
+          "type" : "string",
+          "format" : "date"
         }
       }
     },

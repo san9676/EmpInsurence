@@ -29,6 +29,6 @@
     </sca:service>
   </sca:component>
   <sca:component xmi:id="_c8IvMFkTEe2L0tcRQSMsSQ" name="ComponentTest" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_c8IvMVkTEe2L0tcRQSMsSQ" processName="emp_insurance_details.Test"/>
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_c8IvMVkTEe2L0tcRQSMsSQ" processName="emp_insurance_details.Test" autoStart="false"/>
   </sca:component>
 </sca:composite>

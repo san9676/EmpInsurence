@@ -39,6 +39,33 @@
   "definitions" : {
     "Emp_InsurenceReq" : {
       "type" : "object",
+      "required" : [ "EmpInsurence" ],
+      "properties" : {
+        "CorelationID" : {
+          "type" : "string"
+        },
+        "TransacTime" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "EmpInsurence" : {
+          "$ref" : "#/definitions/Emp_InsurenceType"
+        }
+      }
+    },
+    "Emp_InsurenceRes" : {
+      "type" : "object",
+      "properties" : {
+        "ResCode" : {
+          "type" : "string"
+        },
+        "ResMsg" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Emp_InsurenceType" : {
+      "type" : "object",
       "required" : [ "PolicyType", "SumInsured", "PolicyNumber", "ValidTill", "OrgName", "EmpCode", "EmpName" ],
       "properties" : {
         "EmpCode" : {
@@ -57,22 +84,12 @@
           "type" : "string"
         },
         "SumInsured" : {
-          "type" : "string"
+          "type" : "integer",
+          "format" : "int32"
         },
         "ValidTill" : {
           "type" : "string",
           "format" : "date"
-        }
-      }
-    },
-    "Emp_InsurenceRes" : {
-      "type" : "object",
-      "properties" : {
-        "ResCode" : {
-          "type" : "string"
-        },
-        "ResMsg" : {
-          "type" : "string"
         }
       }
     }
